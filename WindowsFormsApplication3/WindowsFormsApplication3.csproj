@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8A75CC5-34E8-4B97-A38F-2540055253F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication3</RootNamespace>
+    <AssemblyName>WindowsFormsApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Champs.Designer.cs">
+      <DependentUpon>Champs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Champs.resx">
+      <DependentUpon>Champs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BWChamps\Ahri.jpg" />
+    <Content Include="BWChamps\Akali.jpg" />
+    <Content Include="BWChamps\Alistar.jpg" />
+    <Content Include="BWChamps\Amumu.jpg" />
+    <Content Include="BWChamps\Anivia.jpg" />
+    <Content Include="BWChamps\Annie.jpg" />
+    <Content Include="BWChamps\Ashe.jpg" />
+    <Content Include="BWChamps\Blitzcrank.jpg" />
+    <Content Include="BWChamps\Brand.jpg" />
+    <Content Include="BWChamps\Caitlyn.jpg" />
+    <Content Include="BWChamps\Cassiopeia.jpg" />
+    <Content Include="BWChamps\Cho%27Gath.jpg" />
+    <Content Include="BWChamps\Corki.jpg" />
+    <Content Include="BWChamps\Darius.jpg" />
+    <Content Include="BWChamps\Diana.jpg" />
+    <Content Include="BWChamps\Draven.jpg" />
+    <Content Include="BWChamps\Elise.jpg" />
+    <Content Include="BWChamps\Evelynn.jpg" />
+    <Content Include="BWChamps\Ezreal.jpg" />
+    <Content Include="BWChamps\Fiddlesticks.jpg" />
+    <Content Include="BWChamps\Fiora.jpg" />
+    <Content Include="BWChamps\Fizz.jpg" />
+    <Content Include="BWChamps\Galio.jpg" />
+    <Content Include="BWChamps\Gangplank.jpg" />
+    <Content Include="BWChamps\Garen.jpg" />
+    <Content Include="BWChamps\Gragas.jpg" />
+    <Content Include="BWChamps\Graves.jpg" />
+    <Content Include="BWChamps\Hecarim.jpg" />
+    <Content Include="BWChamps\Hermerdernger.jpg" />
+    <Content Include="BWChamps\Irelia.jpg" />
+    <Content Include="BWChamps\Janna.jpg" />
+    <Content Include="BWChamps\Jarvan IV.jpg" />
+    <None Include="BWChamps\Lee_Singer.jpg" />
+    <None Include="BWChamps\Xin_Zhao.jpg" />
+    <None Include="BWChamps\Jarvan_IV.jpg" />
+    <Content Include="BWChamps\Jax.jpg" />
+    <Content Include="BWChamps\Jayce.jpg" />
+    <Content Include="BWChamps\Karma.jpg" />
+    <Content Include="BWChamps\Karthus.jpg" />
+    <Content Include="BWChamps\Kassadin.jpg" />
+    <Content Include="BWChamps\Katarina.jpg" />
+    <Content Include="BWChamps\Kayle.jpg" />
+    <Content Include="BWChamps\Kennen.jpg" />
+    <Content Include="BWChamps\Kha%27Zix.jpg" />
+    <Content Include="BWChamps\Kog%27Maw.jpg" />
+    <Content Include="BWChamps\Lebonkers.jpg" />
+    <Content Include="BWChamps\Lee Singer.jpg" />
+    <Content Include="BWChamps\Leona.jpg" />
+    <Content Include="BWChamps\Lulu.jpg" />
+    <Content Include="BWChamps\Lux.jpg" />
+    <Content Include="BWChamps\Malphite.jpg" />
+    <Content Include="BWChamps\Malzahar.jpg" />
+    <Content Include="BWChamps\Master Yi.jpg" />
+    <Content Include="BWChamps\Meowkai.jpg" />
+    <Content Include="BWChamps\Miss Fortune.jpg" />
+    <Content Include="BWChamps\Mordehaiser.jpg" />
+    <Content Include="BWChamps\Morgana.jpg" />
+    <Content Include="BWChamps\Mundo.jpg" />
+    <Content Include="BWChamps\Nami.jpg" />
+    <Content Include="BWChamps\Nasus.jpg" />
+    <Content Include="BWChamps\Nautilus.jpg" />
+    <Content Include="BWChamps\Nidalee.jpg" />
+    <Content Include="BWChamps\Nocturne.jpg" />
+    <Content Include="BWChamps\Nunu.jpg" />
+    <Content Include="BWChamps\Olaf.jpg" />
+    <Content Include="BWChamps\Orianna.jpg" />
+    <Content Include="BWChamps\Pantheon.jpg" />
+    <Content Include="BWChamps\Poopy.jpg" />
+    <Content Include="BWChamps\Rammus.jpg" />
+    <Content Include="BWChamps\Renekton.jpg" />
+    <Content Include="BWChamps\Rengar.jpg" />
+    <Content Include="BWChamps\Riven.jpg" />
+    <Content Include="BWChamps\Rumble.jpg" />
+    <Content Include="BWChamps\Ryze.jpg" />
+    <Content Include="BWChamps\Sejuani.jpg" />
+    <Content Include="BWChamps\Shaco.jpg" />
+    <Content Include="BWChamps\Shen.jpg" />
+    <Content Include="BWChamps\Shyvana.jpg" />
+    <Content Include="BWChamps\Singed.jpg" />
+    <Content Include="BWChamps\Sion.jpg" />
+    <Content Include="BWChamps\Sivir.jpg" />
+    <Content Include="BWChamps\Skaner.jpg" />
+    <Content Include="BWChamps\Sona.jpg" />
+    <Content Include="BWChamps\Soraka.jpg" />
+    <Content Include="BWChamps\Swain.jpg" />
+    <Content Include="BWChamps\Syndra.jpg" />
+    <Content Include="BWChamps\Talon.jpg" />
+    <Content Include="BWChamps\Taric.jpg" />
+    <Content Include="BWChamps\Teemo.jpg" />
+    <Content Include="BWChamps\Thresh.jpg" />
+    <Content Include="BWChamps\Tristana.jpg" />
+    <Content Include="BWChamps\Trundle.jpg" />
+    <Content Include="BWChamps\Tryndamere.jpg" />
+    <Content Include="BWChamps\Twisted Fate.jpg" />
+    <Content Include="BWChamps\Twitch.jpg" />
+    <Content Include="BWChamps\Udyr.jpg" />
+    <Content Include="BWChamps\Urgot.jpg" />
+    <Content Include="BWChamps\Varus.jpg" />
+    <Content Include="BWChamps\Vayne.jpg" />
+    <Content Include="BWChamps\Veigar.jpg" />
+    <Content Include="BWChamps\Vi.jpg" />
+    <Content Include="BWChamps\Viktor.jpg" />
+    <Content Include="BWChamps\Vladamir.jpg" />
+    <Content Include="BWChamps\Volibear.jpg" />
+    <Content Include="BWChamps\Warwick.jpg" />
+    <Content Include="BWChamps\Wukong.jpg" />
+    <Content Include="BWChamps\Xerath.jpg" />
+    <Content Include="BWChamps\Xin Zhao.jpg" />
+    <Content Include="BWChamps\Yorick.jpg" />
+    <Content Include="BWChamps\Zed.jpg" />
+    <Content Include="BWChamps\Ziggs.jpg" />
+    <Content Include="BWChamps\Zilean.jpg" />
+    <Content Include="BWChamps\Zyra.jpg" />
+    <Content Include="Images\Ahri.jpg" />
+    <Content Include="Images\Akali.jpg" />
+    <Content Include="Images\Alistar.jpg" />
+    <Content Include="Images\Amumu.jpg" />
+    <Content Include="Images\Anivia.jpg" />
+    <Content Include="Images\Annie.jpg" />
+    <Content Include="Images\Ashe.jpg" />
+    <Content Include="Images\Blitzcrank.jpg" />
+    <Content Include="Images\Brand.jpg" />
+    <Content Include="Images\Caitlyn.jpg" />
+    <Content Include="Images\Cassiopeia.jpg" />
+    <Content Include="Images\Cho%27Gath.jpg" />
+    <Content Include="Images\Corki.jpg" />
+    <Content Include="Images\Darius.jpg" />
+    <Content Include="Images\Diana.jpg" />
+    <Content Include="Images\Draven.jpg" />
+    <Content Include="Images\Elise.jpg" />
+    <Content Include="Images\Evelynn.jpg" />
+    <Content Include="Images\Ezreal.jpg" />
+    <Content Include="Images\Fiddlesticks.jpg" />
+    <Content Include="Images\Fiora.jpg" />
+    <Content Include="Images\Fizz.jpg" />
+    <Content Include="Images\Galio.jpg" />
+    <Content Include="Images\Gangplank.jpg" />
+    <Content Include="Images\Garen.jpg" />
+    <Content Include="Images\Gragas.jpg" />
+    <Content Include="Images\Graves.jpg" />
+    <Content Include="Images\Hecarim.jpg" />
+    <Content Include="Images\Hermerdernger.jpg" />
+    <Content Include="Images\Irelia.jpg" />
+    <Content Include="Images\Janna.jpg" />
+    <Content Include="Images\Jarvan IV.jpg" />
+    <Content Include="Images\Jax.jpg" />
+    <Content Include="Images\Jayce.jpg" />
+    <Content Include="Images\Karma.jpg" />
+    <Content Include="Images\Karthus.jpg" />
+    <Content Include="Images\Kassadin.jpg" />
+    <Content Include="Images\Katarina.jpg" />
+    <Content Include="Images\Kayle.jpg" />
+    <Content Include="Images\Kennen.jpg" />
+    <Content Include="Images\Kha%27Zix.jpg" />
+    <Content Include="Images\Kog%27Maw.jpg" />
+    <Content Include="Images\Lebonkers.jpg" />
+    <Content Include="Images\Lee Singer.jpg" />
+    <Content Include="Images\Leona.jpg" />
+    <Content Include="Images\Lulu.jpg" />
+    <Content Include="Images\Lux.jpg" />
+    <Content Include="Images\Malphite.jpg" />
+    <Content Include="Images\Malzahar.jpg" />
+    <Content Include="Images\Master Yi.jpg" />
+    <Content Include="Images\Meowkai.jpg" />
+    <Content Include="Images\Miss Fortune.jpg" />
+    <Content Include="Images\Mordehaiser.jpg" />
+    <Content Include="Images\Morgana.jpg" />
+    <Content Include="Images\Mundo.jpg" />
+    <Content Include="Images\Nami.jpg" />
+    <Content Include="Images\Nasus.jpg" />
+    <Content Include="Images\Nautilus.jpg" />
+    <Content Include="Images\Nidalee.jpg" />
+    <Content Include="Images\Nocturne.jpg" />
+    <Content Include="Images\Nunu.jpg" />
+    <Content Include="Images\Olaf.jpg" />
+    <Content Include="Images\Orianna.jpg" />
+    <Content Include="Images\Pantheon.jpg" />
+    <Content Include="Images\Poopy.jpg" />
+    <Content Include="Images\Rammus.jpg" />
+    <Content Include="Images\Renekton.jpg" />
+    <Content Include="Images\Rengar.jpg" />
+    <Content Include="Images\Riven.jpg" />
+    <Content Include="Images\Rumble.jpg" />
+    <Content Include="Images\Ryze.jpg" />
+    <Content Include="Images\Sejuani.jpg" />
+    <Content Include="Images\Shaco.jpg" />
+    <Content Include="Images\Shen.jpg" />
+    <Content Include="Images\Shyvana.jpg" />
+    <Content Include="Images\Singed.jpg" />
+    <Content Include="Images\Sion.jpg" />
+    <Content Include="Images\Sivir.jpg" />
+    <Content Include="Images\Skaner.jpg" />
+    <Content Include="Images\Sona.jpg" />
+    <Content Include="Images\Soraka.jpg" />
+    <Content Include="Images\Swain.jpg" />
+    <Content Include="Images\Syndra.jpg" />
+    <Content Include="Images\Talon.jpg" />
+    <Content Include="Images\Taric.jpg" />
+    <Content Include="Images\Teemo.jpg" />
+    <Content Include="Images\Thresh.jpg" />
+    <Content Include="Images\Tristana.jpg" />
+    <Content Include="Images\Trundle.jpg" />
+    <Content Include="Images\Tryndamere.jpg" />
+    <Content Include="Images\Twisted Fate.jpg" />
+    <Content Include="Images\Twitch.jpg" />
+    <Content Include="Images\Udyr.jpg" />
+    <Content Include="Images\Urgot.jpg" />
+    <Content Include="Images\Varus.jpg" />
+    <Content Include="Images\Vayne.jpg" />
+    <Content Include="Images\Veigar.jpg" />
+    <Content Include="Images\Vi.jpg" />
+    <Content Include="Images\Viktor.jpg" />
+    <Content Include="Images\Vladamir.jpg" />
+    <Content Include="Images\Volibear.jpg" />
+    <Content Include="Images\Warwick.jpg" />
+    <Content Include="Images\Wukong.jpg" />
+    <Content Include="Images\Xerath.jpg" />
+    <Content Include="Images\Xin Zhao.jpg" />
+    <Content Include="Images\Yorick.jpg" />
+    <Content Include="Images\Zed.jpg" />
+    <Content Include="Images\Ziggs.jpg" />
+    <Content Include="Images\Zilean.jpg" />
+    <Content Include="Images\Zyra.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
